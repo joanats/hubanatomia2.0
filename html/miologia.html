@@ -8,12 +8,17 @@
     <link rel="icon" type="image/x-icon" href="../assets/img/favicon/lapa3d.ico" />
     <title>Hub Anatomia 3D</title>
     <style> 
-       
+       * {
+        margin: 0; /* Remove margens padrão */
+        padding: 0; /* Remove preenchimento padrão */
+        box-sizing: border-box; /* Inclui o padding e a borda no tamanho total do elemento */
+    }
        body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             text-align: center;
         }
+
         .header { 
             margin: 25px;
             padding: 20px;
@@ -87,7 +92,18 @@
             border-radius: 10px;
             
         }
+
     </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSMXC8P0RW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BSMXC8P0RW');
+    </script>
 </head>
 
 <body>
@@ -239,16 +255,6 @@
                 <div class="label">Íleo e Intestino Grosso</div>
                 </a>
             </div>
-
-      <!-- Footer -->
-      <footer class="content-footer footer bg-footer-theme">
-        <div class="container-xxl d-flex flex-wrap justify-content-center py-2 flex-md-row flex-column ">
-            <div class="mb-2 mb-md-0">
-                <a href="https://www.linkedin.com/in/joanatrindade-/" target="_blank" class="footer-link fw-bolder">Copyright © 2024 Joana Trindade dos Santos - Medicina Veterinária - UFAPE.</a>
-            </div>
-        </div>
-    </footer>
-    <!-- / AJEITAR Footer -->
 
 </body>
 </html>
