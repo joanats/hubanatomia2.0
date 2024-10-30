@@ -30,7 +30,7 @@
 
         .grid-container {
             display: grid;
-            grid-template-columns:repeat(4, 1fr); 
+            grid-template-columns: 1fr; 
             gap: 40px;
             justify-items: center;
             margin: 30px;
@@ -92,6 +92,29 @@
             border-radius: 10px;
             
         }
+
+         /*As regras se aplicam quando a largura da tela é maior ou igual ao valor especificado.*/
+    
+         @media (min-width: 768px) and (max-width: 1199px ) {
+           .item {     
+            width: 70%;
+           }
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        @media (min-width: 1200px ) {
+            
+            .item {
+                width: 100%;
+            }
+           .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+           }
+            
+        }
+
 
     </style>
 
