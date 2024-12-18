@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script> <!--script for 3D-->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/lapa3d.ico" />
+    <title>Hub Anatomia 3D</title>
+    
+<style>
+    body {
+        background-color: #1c1c1c; 
+        margin: 0; 
+        padding: 0; 
+        display: flex;
+        justify-content: center; 
+        align-items: auto; 
+        height: 100vh; 
+    }
+    
+    .heart {display: flex;}
+    model-viewer {width: 100vw; height: 100vh; margin: 0;} 
+
+</style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSMXC8P0RW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BSMXC8P0RW');
+    </script>
+</head>
+<body>
+    <div class="box">
+        <model-viewer src="../assets/img/3D img//mm. profundos pelvicos.glb" camera-controls auto-rotate></model-viewer>
+    </div>
+
+</body>
+</html>
