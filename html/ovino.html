@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/vendor/css/theme-default.css" class="template-customizer-theme-css" /> <!--responsividade-->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script> <!--script for 3D-->
+    <link rel="icon" type="image/x-icon" href="../assets/img/favicon/lapa3d.ico" />
+    <title>Hub Anatomia 3D</title>
+    <style> 
+       * {
+        margin: 0; /* Remove margens padrão */
+        padding: 0; /* Remove preenchimento padrão */
+        box-sizing: border-box; /* Inclui o padding e a borda no tamanho total do elemento */
+    }
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .header { 
+            margin: 25px;
+            padding: 20px;
+            background-color: #972E3F;
+            color: white;
+            display: inline-block;
+            border-radius: 10px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 40px;
+            justify-items: center;
+            margin: 30px;
+            
+        }
+
+        .item img {
+            width: 100%;
+            height: auto;
+            
+        }
+
+        .organs-section .label {
+            background-color: #B3672D; /* Cor amarela para órgãos */
+            color: white;
+            padding: 15px;
+            margin-top: 1px;
+            font-size: 27px;
+            width: 100%; 
+            box-sizing: border-box;
+        }
+
+        .muscles-section .label {
+            background-color: #972E3F; /* Cor vermelha para músculos */
+            color: white;
+            padding: 15px;
+            margin-top: 1px;
+            font-size: 27px;
+            width: 100%; 
+            box-sizing: border-box;
+        }
+
+        .systems-section .label {
+            background-color: #202f69; /* Cor azul para sistemas */
+            color: white;
+            padding: 15px;
+            margin-top: 1px;
+            font-size: 27px;
+            width: 100%; 
+            box-sizing: border-box;
+        }
+
+        .urogenit-section .label {
+            background-color: #0f6e25; 
+            color: white;
+            padding: 15px;
+            margin-top: 1px;
+            font-size: 27px;
+            width: 100%; 
+            box-sizing: border-box;
+        }
+
+        .header2 {
+            margin: 20px;
+            padding: 1px;
+            background-color: #202f69;
+            color: white;
+            display: inline-block;
+            border-radius: 10px;
+            
+        }
+
+        .header3 {
+            margin: 20px;
+            padding: 1px;
+            background-color: #B3672D;
+            color: white;
+            display: inline-block;
+            border-radius: 10px;
+            
+        }
+
+        .header4 {
+            margin: 20px;
+            padding: 1px;
+            background-color: #0f6e25;
+            color: white;
+            display: inline-block;
+            border-radius: 10px;
+            
+        }
+
+         /*As regras se aplicam quando a largura da tela é maior ou igual ao valor especificado.*/
+    
+         @media (min-width: 768px) and (max-width: 1199px ) {
+           .item {     
+            width: 70%;
+           }
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); 
+            }
+        }
+
+        @media (min-width: 1200px ) {
+            
+            .item {
+                width: 100%;
+            }
+           .grid-container {
+                grid-template-columns: repeat(4, 1fr);
+           }
+            
+        }
+
+
+    </style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSMXC8P0RW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BSMXC8P0RW');
+    </script>
+</head>
+
+<body>
+    
+    <h1 class="header header-organs">SISTEMA LOCOMOTOR</h1> 
+    <div class="grid-container muscles-section">
+
+    <div class="item">
+            <a href="/html/glb_html/ovino/esqueleto_ovino.html" style="text-decoration: none; color: inherit;">
+            <img src="../assets/img/capamio/capas_ov/esqueleto_ov.jpg" alt="Esqueleto">
+            <div class="label">Esqueleto</div>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="/html/glb_html/ovino/esterno_ov.html" style="text-decoration: none; color: inherit;">
+            <img src="../assets/img/capamio/capas_ov/esterno_ov.jpg" alt="Esterno">
+            <div class="label">Esterno</div>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="/html/glb_html/ovino/mmdissecados.html" style="text-decoration: none; color: inherit;">
+             <img src="../assets/img/capamio/capas_ov/mm_superiores_ov.jpg" alt="MM. Superficiais">
+            <div class="label">MM. Superficiais</div>
+            </a>
+        </div>
+
+    <div class="item">
+    <a href="/html/glb_html/ovino/espacos_inter_ovino.html" style="text-decoration: none; color: inherit;">
+    <img src="../assets/img/capamio/capas_ov/espacos_inter_ov.jpg" alt="Tórax">
+    <div class="label">Tórax</div>
+    </a>        
+    </div>
+
+    <div class="item">
+        <a href="/html/glb_html/ovino/tronco_ovino.html" style="text-decoration: none; color: inherit;">
+        <img src="../assets/img/capamio/capas_ov/tronco_profundo_ov.jpg" alt="Tronco">
+        <div class="label">Tronco Profundo</div>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="/html/glb_html/ovino/toracico_profundo.html" style="text-decoration: none; color: inherit;"> 
+        <img src="../assets/img/capamio/capas_ov/toracico_profundo_ov.jpg" alt="Membro Torácico Profundo">
+        <div class="label">Membro Torácico Profundo</div>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="/html/glb_html/ovino/toracico_superficial.html" style="text-decoration: none; color: inherit;"> 
+        <img src="../assets/img/capamio/capas_ov/toracico_sup_ov.jpg" alt="Membro Torácico Superficial">
+        <div class="label">Membro Torácico Superficial</div>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="/html/glb_html/ovino/pelvico-superficial_ovino.html" style="text-decoration: none; color: inherit;">
+        <img src="../assets/img/capamio/capas_ov/pelvico_superficial_ov.jpg" alt="Membro Pélvico Superficial">
+        <div class="label">Membro Pélvico Superficial</div>
+        </a>
+    </div>
+
+    <div class="item">
+        <a href="/html/glb_html/ovino/pelvico-profundo_ovino.html" style="text-decoration: none; color: inherit;">
+        <img src="../assets/img/capamio/capas_ov/pelvico_profundo_ov.jpg" alt="Membro Pélvico Profundo">
+        <div class="label">Membro Pélvico Profundo</div>
+        </a>
+    </div>
+    </div>
+
+        </div>
+             <div class="header2">
+            <h1 class="header2">SISTEMA RESPIRATÓRIO</h1>
+        </div>
+
+        <div class="grid-container systems-section">
+            <div class="item">
+                <a href="/html/glb_html/ovino/sist-respiratorio_ovino.html" style="text-decoration: none; color: inherit;"> 
+                <img src="../assets/img/capamio/capas_ov/respiratorio_ov.jpg" alt="Sistema Respiratório">
+                <div class="label">Respiratório</div>
+                </a>
+            </div>
+
+        </div>
+             <div class="header3">
+            <h1 class="header3">SISTEMA DIGESTÓRIO</h1>
+        </div>
+
+    <div class="grid-container organs-section">
+            
+        <div class="item">
+            <a href="/html/glb_html/ovino/cavidade_abdominal.html" style="text-decoration: none; color: inherit;">
+            <img src="../assets/img/capamio/capas_ov/cav_abd_ov.png" alt="Cavidade Abdominal">
+            <div class="label">Cavidade Abdominal</div>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="/html/glb_html/ovino/estomago_ovino.html" style="text-decoration: none; color: inherit;">
+            <img src="../assets/img/capamio/capas_ov/estomago_ov.jpg" alt="Estômago">
+            <div class="label">Estômago</div>
+            </a>
+        </div>
+
+        <div class="item">
+            <a href="/html/glb_html/ovino/lingua.html" style="text-decoration: none; color: inherit;">
+            <img src="../assets/img/capamio/capas_ov/lingua_ov.png" alt="Língua">
+            <div class="label">Língua</div>
+            </a>
+        </div>
+
+         </div>
+             <div class="header4">
+            <h1 class="header4">SISTEMA UROGENITAL</h1>
+        </div>
+
+    <div class="grid-container urogenit-section">
+            
+        <div class="item">
+                <a href="/html/glb_html/ovino/sist-urogenital_ovino.html" style="text-decoration: none; color: inherit;"> 
+                <img src="../assets/img/capamio/capas_ov/urogenital_ov.jpg" alt="Sistema Urogenital">
+                <div class="label">Urogenital</div>
+                </a>
+            </div>
+
+</body>
+</html>
