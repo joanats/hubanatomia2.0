@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.5.0/model-viewer.min.js"></script> <!--script for 3D-->
+    <link rel="icon" type="image/x-icon" href="/assets/img/favicon/lapa3d.ico" />
+    <title>Hub Anatomia 3D</title>
+    
+<style>
+    body {
+        padding-top: 60px; 
+        background-color: #353535; 
+        margin: 0; 
+        padding: 0; 
+        display: flex;
+        justify-content: center; 
+        align-items: auto; 
+        height: 100vh; 
+    }
+    
+    .heart {display: flex;}
+    model-viewer {width: 100vw; height: 100vh; margin: 0;} 
+
+    .header-banner {
+        position: absolute;
+        top: 10px;
+        width: 80%;
+        margin: 0 auto;
+        background-color: #202f69; 
+        
+        text-align: center; 
+        color: white;
+        font-family: Arial, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 15px 0; 
+        z-index: 20;
+        border-radius: 15px;
+    }
+
+    .back-svg-container {
+        position: fixed;
+        top: 10px; 
+        left: 30px;
+        z-index: 1000;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .back-svg-container img {
+    width: 50px;
+    height: 50px;
+    }
+
+
+
+</style>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-BSMXC8P0RW"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-BSMXC8P0RW');
+    </script>
+</head>
+
+<body>
+    <button class="back-svg-container" onclick="history.back()">
+        <img src="/assets/img/icons/brands/seta.svg" alt="Voltar" class="back-arrow-svg">  
+    </button>
+    <div class="header-banner">
+        Sistema <br> Gastrointestinal
+    </div>
+    <div class="box">
+        <model-viewer src="/assets/img/3D img/Gastrointestinal.glb" 
+        camera-controls
+        exposure="0.5"
+        environment-image="neutral"
+        shadow-intensity="0.1"
+        tone-mapping="neutral"
+        ></model-viewer>
+
+</body>
+</html>
